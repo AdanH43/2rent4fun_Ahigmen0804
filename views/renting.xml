@@ -66,8 +66,6 @@
                         <group>
                             <field name="nombre"/>
                             <field name="apellidos"/>
-                            <field name="foto"/>
-                            <field name="estado"/>
                             <field name="vehiculos_alquilados_ids" widget="many2many_tags"/>
                         </group>
                     </sheet>
