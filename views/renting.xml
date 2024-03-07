@@ -135,7 +135,6 @@
                             <field name="vehiculo_id"/>
                             <field name="fecha_inicio"/>
                         </group>
-                        <button name="print_report" string="Imprimir Informe" type="object" class="oe_highlight"/>
                     </sheet>
                 </form>
             </field>
