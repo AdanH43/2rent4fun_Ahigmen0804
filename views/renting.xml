@@ -31,7 +31,55 @@
         <menuitem id="menu_renting_clientes" name="Clientes" parent="menu_renting_2rent4fun_ahigmen0804_main" action="action_renting_clientes"/>
         <menuitem id="menu_renting_reservas" name="Alquileres" parent="menu_renting_2rent4fun_ahigmen0804_main" action="action_renting_reservas"/>
 
-        <!-- Vista de formulario para vehículos -->
+        <!-- Vista de árbol para vehículos -->
+<record id="view_renting_vehiculos_tree" model="ir.ui.view">
+    <field name="name">renting.vehiculos.tree</field>
+    <field name="model">renting.vehiculos</field>
+    <field name="arch" type="xml">
+        <tree string="Vehículos">
+            <field name="foto"/>
+            <field name="marca"/>
+            <field name="matricula"/>
+            <field name="estado"/>
+            <field name="alquileres_ids" widget="one2many_list">
+                <tree>
+                    <field name="cliente_id"/>
+                    <field name="fecha_inicio"/>
+                    <!-- Otros campos de la reserva que desees mostrar -->
+                </tree>
+            </field>
+        </tree>
+    </field>
+</record>
+
+<!-- Vista de árbol para clientes -->
+<record id="view_renting_clientes_tree" model="ir.ui.view">
+    <field name="name">renting.clientes.tree</field>
+    <field name="model">renting.clientes</field>
+    <field name="arch" type="xml">
+        <tree string="Clientes">
+            <field name="nombre"/>
+            <field name="apellidos"/>
+            <field name="vehiculos_alquilados_ids" widget="many2many_tags"/>
+        </tree>
+    </field>
+</record>
+
+<!-- Vista de árbol para reservas (alquileres) -->
+<record id="view_renting_reservas_tree" model="ir.ui.view">
+    <field name="name">renting.reservas.tree</field>
+    <field name="model">renting.reservas</field>
+    <field name="arch" type="xml">
+        <tree string="Alquileres">
+            <field name="cliente_id"/>
+            <field name="vehiculo_id"/>
+            <field name="fecha_inicio"/>
+            <!-- Otros campos de la reserva que desees mostrar -->
+        </tree>
+    </field>
+</record>
+
+ <!-- Vista de formulario para vehículos -->
         <record id="view_renting_vehiculos_form" model="ir.ui.view">
             <field name="name">renting.vehiculos.form</field>
             <field name="model">renting.vehiculos</field>
