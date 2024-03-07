@@ -39,7 +39,6 @@
                 <form string="Vehículos">
                     <sheet>
                         <group>
-                            <field name="nombre"/>
                             <field name="foto"/>
                             <field name="marca"/>
                             <field name="matricula"/>
