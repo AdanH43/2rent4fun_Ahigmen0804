@@ -21,7 +21,7 @@
         id="report_renting_reserva"
         model="renting.reservas"
         string="Informe de Reserva"
-        name="2rent4fun_Ahigmen0804.report_renting_reserva"
-        file="2rent4fun_Ahigmen0804.report_renting_reserva"
+        name="2rent4fun_Ahigmen0804.report_renting_reservas"
+        file="2rent4fun_Ahigmen0804.report_renting_reservas"
         report_type="qweb-pdf" />
 </odoo>
