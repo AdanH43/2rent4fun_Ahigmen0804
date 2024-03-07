@@ -43,8 +43,7 @@ class RentingVehiculos(models.Model):
     
 
     #Constraints de SQL del modelo
-    __sql_constraints = [
-    ('matricula_unique', 'UNIQUE (matricula)', 'La matricula debe ser unica')   
+    __sql_constraints = [ 
     ('estado_check', 'CHECK (estado IN (\'averiado\', \'alquilado\', \'disponible\', \'robado\'))', 'El estado del vehículo debe ser uno de: averiado, alquilado, disponible o robado.')
 ]
 
