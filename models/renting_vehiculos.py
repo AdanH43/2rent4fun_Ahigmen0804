@@ -15,7 +15,7 @@ class RentingVehiculos(models.Model):
     _description = 'Vehiculos'
 
     #Parametros de ordenacion por defecto
-    _order = 'nombre'
+    _order = 'marca'
 
     #ATRIBUTOS
 
@@ -42,8 +42,7 @@ class RentingVehiculos(models.Model):
     __sql_constraints = [ 
     ('estado_check', 'CHECK (estado IN (\'averiado\', \'alquilado\', \'disponible\', \'robado\'))', 'El estado del vehículo debe ser uno de: averiado, alquilado, disponible o robado.')
 ]
-
-
+    
     def name_get(self):
         result = []
         for record in self:
