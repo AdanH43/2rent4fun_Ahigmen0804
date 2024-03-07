@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    
 
         <!-- Menú para el módulo -->
         <menuitem id="menu_renting_2rent4fun_ahigmen0804" name="Renting 2rent4fun Ahigmen0804" sequence="10"/>
@@ -139,5 +140,5 @@
             </field>
         </record>
 
-    </data>
+    
 </odoo>
