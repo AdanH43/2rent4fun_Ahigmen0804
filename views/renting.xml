@@ -31,7 +31,7 @@
         <menuitem id="menu_renting_clientes" name="Clientes" parent="menu_renting_2rent4fun_ahigmen0804_main" action="action_renting_clientes"/>
         <menuitem id="menu_renting_reservas" name="Alquileres" parent="menu_renting_2rent4fun_ahigmen0804_main" action="action_renting_reservas"/>
 
-        <!-- Vista de árbol para vehículos -->
+<!-- Vista de árbol para vehículos -->
 <record id="view_renting_vehiculos_tree" model="ir.ui.view">
     <field name="name">renting.vehiculos.tree</field>
     <field name="model">renting.vehiculos</field>
