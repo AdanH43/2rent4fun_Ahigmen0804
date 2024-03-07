@@ -24,13 +24,12 @@
         #Y en www.odoo.yenthevg.com/creating-security-groups-odoo/
         #'security/groups.xml',
         'security/ir.model.access.csv',
-
         #Aqui distintas vistas de equipo (vistas diferentes, mismo modelo)
         'views/renting.xml',
         #Vista a un informe
         'report/liga_equipo_clasificacion_report.xml',
-        #Añadimos un Wizard para introducir equipos
-        'wizard/liga_equipo_wizard.xml',
+        
+        
 
         
     ],
